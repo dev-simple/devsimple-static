@@ -39,3 +39,10 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+$max-width: 1024px;
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+)

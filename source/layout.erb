@@ -12,9 +12,10 @@
 
     <%= stylesheet_link_tag "all", "highlighting" %>
     <%= javascript_include_tag "all" %>
-
   </head>
   <body>
+
+    <%= partial "partials/nav" %>
 
     <div id="main" role="main">
       <%= yield %>
@@ -42,5 +43,8 @@
         <% end %>
       </ol>
     </aside>
+
+    <%= partial "partials/footer" %>
+
   </body>
 </html>
