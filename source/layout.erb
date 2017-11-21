@@ -8,8 +8,11 @@
     <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
     <%= stylesheet_link_tag "all", "highlighting" %>
     <%= javascript_include_tag "all" %>
+
   </head>
   <body>
 
