@@ -13,6 +13,8 @@ $article-layout-grid--tablet-up: (
 body {
   @include grid-container;
   // @include grid-visual;
+
+  font-size: 16px;
   max-width: $max-width;
   margin: 0 auto;
 }
