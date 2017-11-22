@@ -2,7 +2,7 @@ header {
   @include grid-container;
   padding: .8em;
   margin-bottom: 5rem;
-  border-bottom: 1px solid #f0f0f2;
+  border-bottom: 1px solid $light-gray;
 }
 
 .logo {
@@ -35,19 +35,24 @@ nav {
 
 nav {
   height: 60px;
-  margin-top: 1rem;
-
-  a {
-    color: #454547;
-    text-decoration: none;
-    &:hover {
-      color: #ee3e44;
-      text-decoration: underline;
-    }
-  }
+  margin-top: 0.4em;
 
   ul li {
     display: inline-block;
     padding: 1rem;
   }
 }
+
+[aria-current]:not([aria-current="false"]) {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $primary-color;
+  }
+}
+

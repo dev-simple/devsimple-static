@@ -23,4 +23,3 @@ gem "nokogiri"
 gem "bitters"
 gem "bourbon"
 gem "neat"
-# gem 'refills'
