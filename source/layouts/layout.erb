@@ -19,11 +19,6 @@
 
     <main>
         <section class="content">
-            <% if current_article %>
-                <h1><%= current_article.title %></h1>
-                <% author = find_author(current_page.data.author) %>
-                <h3>Автор: <%= author.name %></h3>
-            <% end %>
             <%= yield %>
         </section>
     </main>

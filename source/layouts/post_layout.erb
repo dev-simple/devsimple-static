@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
+    <%= stylesheet_link_tag "all", "highlighting" %>
+    <%= javascript_include_tag "all" %>
+  </head>
+  <body>
+
+    <%= partial "partials/header" %>
+
+    <main>
+        <section class="content">
+            <article class="post">
+                <% if current_article %>
+                    <section class="post--header">
+                        <h1><%= current_article.title %></h1>
+                        <% author = find_author(current_page.data.author) %>
+                        <div class="meta">
+                            <span class="meta-author"><%= author.name %></span>
+                            ∙
+                            <span class="meta-date"><%= current_article.date.strftime("%d.%m.%Y") %></span>
+                            <ul class="meta-tag-list">
+                                <% current_article.tags.each do |tag| %>
+                                    <li class="meta-tag-item"><%= link_to tag, "/posts/tags/#{tag}" %></li>
+                                <% end %>
+                            </ul>
+                        </div>
+                    </section>
+                <% end %>
+                <section class="post--body">
+                    <%= yield %>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <%= partial "partials/footer" %>
+
+  </body>
+</html>

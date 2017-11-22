@@ -1,0 +1,62 @@
+.post {
+  padding-bottom: 5rem;
+}
+
+.post--header {
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+  }
+
+  .meta {
+    line-height: 1.5;
+    padding-bottom: 5rem;
+
+    .meta-author {
+      color: $primary-color;
+    }
+  }
+
+  .meta-tag-list {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    list-style: none;
+    margin-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .meta-tag-item {
+    display: inline-block;
+
+    a {
+      color: $primary-color;
+      &:hover {
+        color: $link-color;
+      }
+    }
+
+    &:not(:last-of-type)::after {
+      content: ",";
+      display: inline-block;
+      margin-left: -1px;
+      margin-right: 4px;
+    }
+  }
+}
+
+
+.post--body {
+  border-top: 1px solid $light-gray;
+  padding-top: 5rem;
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 4rem 0 2rem;
+    text-align: center;
+  }
+}
+
