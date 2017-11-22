@@ -1,31 +1,14 @@
-configure :development do
-  activate :livereload
-end
-
-
 activate :aria_current
 activate :autoprefixer
-
 activate :directory_indexes
-
 activate :syntax, line_numbers: false
-
-set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
-
 activate :sprockets
 
-set :css_dir, "stylesheets"
-set :js_dir, "javascripts"
-set :images_dir, "images"
-
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
-  blog.prefix = "blog"
+  blog.prefix = "posts"
 
   blog.permalink = "{year}/{month}/{day}/{title}.html"
-  # Matcher for blog source files
-  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "{year}/{month}/{day}-{title}.html"
   blog.taglink = "tags/{tag}.html"
   blog.layout = "layout"
   blog.summary_separator = /\(READMORE\)/
@@ -33,7 +16,7 @@ activate :blog do |blog|
   blog.year_link = "{year}.html"
   blog.month_link = "{year}/{month}.html"
   blog.day_link = "{year}/{month}/{day}.html"
-  blog.default_extension = ".markdown"
+  blog.default_extension = ".md"
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
@@ -44,4 +27,16 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
-page "/feed.xml", layout: false
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+set :css_dir, "stylesheets"
+set :js_dir, "javascripts"
+set :images_dir, "images"
+
+page "/*.json", layout: false
+page "/*.txt", layout: false
+page "/*.xml", layout: false
+
+configure :development do
+  activate :livereload
+end
