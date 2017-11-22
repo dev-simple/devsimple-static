@@ -1,19 +1,22 @@
 header {
   @include grid-container;
-  padding: 2em;
-  margin-bottom: 2rem;
+  padding: .8em;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #f0f0f2;
 }
 
 .logo {
    @include grid-column(1, $article-layout-grid);
    text-align: center;
+   margin-top: 3rem;
    svg {
-     @include size(100px);
+     @include size(140px);
    }
 
    @include grid-media($article-layout-grid--tablet-up) {
      @include grid-column(1);
      text-align: left;
+     margin-top: 0;
      svg {
        @include size(60px);
      }
@@ -22,6 +25,15 @@ header {
 
 nav {
   @include grid-column(1, $article-layout-grid);
+  ul { text-align: center; }
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(4);
+    ul { text-align: right; }
+  }
+}
+
+nav {
   height: 60px;
   margin-top: 1rem;
 
@@ -34,17 +46,8 @@ nav {
     }
   }
 
-  ul {
-    text-align: center;
-
-    li {
-      display: inline-block;
-      padding: 1rem;
-    }
-  }
-
-  @include grid-media($article-layout-grid--tablet-up) {
-    @include grid-column(4);
-    ul { text-align: right; }
+  ul li {
+    display: inline-block;
+    padding: 1rem;
   }
 }
