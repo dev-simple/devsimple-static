@@ -12,16 +12,4 @@ main {
   @include grid-column(1, $article-layout-grid);
   margin-bottom: 2rem;
   min-height: calc(80vh - 65px);
-
-  @include grid-media($article-layout-grid--tablet-up) {
-    @include grid-column(4);
-  }
-}
-
-aside {
-  @include grid-column(1, $article-layout-grid);
-
-  @include grid-media($article-layout-grid--tablet-up) {
-    @include grid-column(1);
-  }
 }
