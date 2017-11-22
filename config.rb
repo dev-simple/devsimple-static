@@ -28,7 +28,15 @@ activate :blog do |blog|
 end
 
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
+set :markdown,
+  autolink: true,
+  fenced_code_blocks: true,
+  footnotes: true,
+  highlight: true,
+  smartypants: true,
+  strikethrough: true,
+  tables: true,
+  with_toc_data: true
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
