@@ -2,6 +2,10 @@ configure :development do
   activate :livereload
 end
 
+
+activate :aria_current
+activate :autoprefixer
+
 activate :directory_indexes
 
 activate :syntax, line_numbers: false

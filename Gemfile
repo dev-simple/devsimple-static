@@ -13,6 +13,8 @@ gem "middleman-blog"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "middleman-sprockets"
+gem "middleman-aria_current"
+gem "middleman-autoprefixer"
 
 gem "redcarpet", "~> 3.3", ">= 3.3.3"
 gem "builder", "~> 3.0"
