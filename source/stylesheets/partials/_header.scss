@@ -1,30 +1,45 @@
 header {
   @include grid-container;
-  background: lightblue;
   padding: 2em;
   margin-bottom: 2rem;
 }
 
 .logo {
    @include grid-column(1, $article-layout-grid);
-   background: pink;
    text-align: center;
+   svg {
+     @include size(100px);
+   }
 
    @include grid-media($article-layout-grid--tablet-up) {
      @include grid-column(1);
      text-align: left;
+     svg {
+       @include size(60px);
+     }
    }
 }
 
 nav {
   @include grid-column(1, $article-layout-grid);
-  background: lightgreen;
+  height: 60px;
+  margin-top: 1rem;
+
+  a {
+    color: #454547;
+    text-decoration: none;
+    &:hover {
+      color: #ee3e44;
+      text-decoration: underline;
+    }
+  }
 
   ul {
     text-align: center;
 
     li {
       display: inline-block;
+      padding: 1rem;
     }
   }
 
