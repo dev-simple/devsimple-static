@@ -1,0 +1,35 @@
+header {
+  @include grid-container;
+  background: lightblue;
+  padding: 2em;
+  margin-bottom: 2rem;
+}
+
+.logo {
+   @include grid-column(1, $article-layout-grid);
+   background: pink;
+   text-align: center;
+
+   @include grid-media($article-layout-grid--tablet-up) {
+     @include grid-column(1);
+     text-align: left;
+   }
+}
+
+nav {
+  @include grid-column(1, $article-layout-grid);
+  background: lightgreen;
+
+  ul {
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(4);
+    ul { text-align: right; }
+  }
+}

@@ -1,5 +1,12 @@
 footer {
-  border-top: 1px solid #000;
-  padding: 1rem;
+  @include grid-container;
+  height: 200px;
+  background: #29292c;
+  color: #b5b5c0;
+}
+
+.footer-content {
+  @include grid-column(1, $article-layout-grid);
   text-align: center;
+  padding: 2rem;
 }

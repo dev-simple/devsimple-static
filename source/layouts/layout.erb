@@ -15,39 +15,41 @@
   </head>
   <body>
 
-    <%= partial "partials/nav" %>
+    <%= partial "partials/header" %>
 
-    <div id="main" role="main">
-        <% if current_article %>
-            <h1><%= current_article.title %></h1>
-            <% author = find_author(current_page.data.author) %>
-            <h3>Автор: <%= author.name %></h3>
-        <% end %>
-      <%= yield %>
-    </div>
+    <main>
+        <section class="content">
+            <% if current_article %>
+                <h1><%= current_article.title %></h1>
+                <% author = find_author(current_page.data.author) %>
+                <h3>Автор: <%= author.name %></h3>
+            <% end %>
+            <%= yield %>
+        </section>
 
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
+        <aside>
+          <h2>Recent Articles</h2>
+          <ol>
+            <% blog.articles[0...10].each do |article| %>
+              <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+            <% end %>
+          </ol>
 
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
+          <h2>Tags</h2>
+          <ol>
+            <% blog.tags.each do |tag, articles| %>
+              <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+            <% end %>
+          </ol>
 
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-        <% end %>
-      </ol>
-    </aside>
+          <h2>By Year</h2>
+          <ol>
+            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+              <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+            <% end %>
+          </ol>
+        </aside>
+    </main>
 
     <%= partial "partials/footer" %>
 

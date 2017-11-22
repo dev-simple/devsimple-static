@@ -41,9 +41,21 @@ $focus-outline-offset: 2px;
 $base-duration: 150ms;
 $base-timing: ease;
 
-$max-width: 1024px;
+$content-max-width: 1024px;
 
 $neat-grid: (
   columns: 12,
   gutter: 20px,
-)
+);
+
+$article-layout-grid: (
+  columns: 1,
+  gutter: 2rem,
+);
+
+$article-layout-grid--tablet-up: (
+  columns: 5,
+  gutter: 2rem,
+  media: "(min-width: 768px)",
+);
+

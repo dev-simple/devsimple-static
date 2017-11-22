@@ -1,40 +1,17 @@
-$article-layout-grid: (
-  columns: 1,
-  gutter: 2rem,
-);
-
-
-$article-layout-grid--tablet-up: (
-  columns: 5,
-  gutter: 2rem,
-  media: "(min-width: 768px)",
-);
-
 body {
-  @include grid-container;
-  // @include grid-visual;
-
   font-size: 16px;
-  max-width: $max-width;
+}
+
+main {
+  @include grid-container;
+  max-width: $content-max-width;
   margin: 0 auto;
 }
 
-nav {
+.content {
   @include grid-column(1, $article-layout-grid);
   margin-bottom: 2rem;
-
-  ul li {
-    display: inline-block;
-  }
-}
-
-footer {
-  @include grid-column(1, $article-layout-grid);
-}
-
-#main {
-  @include grid-column(1, $article-layout-grid);
-  margin-bottom: 2rem;
+  min-height: calc(80vh - 65px);
 
   @include grid-media($article-layout-grid--tablet-up) {
     @include grid-column(4);
