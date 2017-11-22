@@ -45,11 +45,3 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-
-helpers do
-  def find_author(author)
-    result = data.authors.select {|a| a.keys.first == author}
-    raise ArgumentError unless result.any?
-    result.first
-  end
-end
