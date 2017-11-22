@@ -1,0 +1,11 @@
+<div class="meta">
+  <% author = find_author(article.data.author) %>
+  <span class="meta-author"><%= author.name %></span>
+  ∙
+  <span class="meta-date"><%= article.date.strftime("%d.%m.%Y") %></span>
+  <ul class="meta-tag-list">
+      <% article.tags.each do |tag| %>
+          <li class="meta-tag-item"><%= link_to tag, "/posts/tags/#{tag}" %></li>
+      <% end %>
+  </ul>
+</div>

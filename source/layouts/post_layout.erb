@@ -20,22 +20,10 @@
     <main>
         <section class="content">
             <article class="post">
-                <% if current_article %>
-                    <section class="post--header">
-                        <h1><%= current_article.title %></h1>
-                        <% author = find_author(current_page.data.author) %>
-                        <div class="meta">
-                            <span class="meta-author"><%= author.name %></span>
-                            ∙
-                            <span class="meta-date"><%= current_article.date.strftime("%d.%m.%Y") %></span>
-                            <ul class="meta-tag-list">
-                                <% current_article.tags.each do |tag| %>
-                                    <li class="meta-tag-item"><%= link_to tag, "/posts/tags/#{tag}" %></li>
-                                <% end %>
-                            </ul>
-                        </div>
-                    </section>
-                <% end %>
+                <section class="post--header">
+                    <h1><%= current_article.title %></h1>
+                    <%= partial "partials/meta", locals: { article: current_article } %>
+                </section>
                 <section class="post--body">
                     <%= yield %>
                 </section>
