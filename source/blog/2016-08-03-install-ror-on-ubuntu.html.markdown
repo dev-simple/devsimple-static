@@ -21,7 +21,8 @@ $ sudo apt-get update
 Далее необходимо установить дополнительные пакеты, которые необходимы для корректной работы rbenv и Ruby:
 
 ```console
-$ sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev \
+$ sudo apt-get install autoconf bison build-essential libssl-dev \
+libyaml-dev libreadline6-dev zlib1g-dev \
 libncurses5-dev libffi-dev libgdbm3 libgdbm-dev git
 ```
 
@@ -34,7 +35,7 @@ libncurses5-dev libffi-dev libgdbm3 libgdbm-dev git
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
-Теперь, когда мы скачали rbenv необходимо добавить в глобальную переменную $PATH путь к исполняемым файлам и добавить команду rbenv init для автоматического запуска rbenv:
+Теперь, когда мы скачали rbenv необходимо добавить в глобальную переменную `$PATH` путь к исполняемым файлам и добавить команду `rbenv init` для автоматического запуска rbenv:
 
 ```console
 $ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
