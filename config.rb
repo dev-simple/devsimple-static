@@ -10,6 +10,7 @@ set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
 
 activate :sprockets
+
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
@@ -40,3 +41,11 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
+
+helpers do
+  def find_author(author)
+    result = data.authors.select {|a| a.keys.first == author}
+    raise ArgumentError unless result.any?
+    result.first
+  end
+end

@@ -2,6 +2,7 @@
 
 title: Установка Ruby on Rails на Ubuntu
 date: 2016-08-03 00:00 UTC
+author: artyom
 tags: [ruby, ruby on rails]
 
 ---
