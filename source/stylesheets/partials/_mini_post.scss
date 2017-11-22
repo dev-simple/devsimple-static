@@ -1,0 +1,31 @@
+.mini-post {
+  border-bottom: 1px solid #f0f0f2;
+  line-height: 1.9rem;
+  margin-bottom: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.mini-post--title {
+  font-size: 1.75rem;
+  line-height: 2.09rem;
+}
+
+.mini-post--link {
+  color: $primary-color;
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.mini-post .meta {
+  padding-bottom: 0;
+}
+.mini-post .meta-tag-list {
+  text-align: left;
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    display: inline-block;
+    margin-left: 2rem;
+    text-align: right;
+  }
+}
