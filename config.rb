@@ -37,9 +37,9 @@ set :markdown,
   strikethrough: true,
   tables: true,
   with_toc_data: true
-set :css_dir, "stylesheets"
-set :js_dir, "javascripts"
-set :images_dir, "images"
+set :css_dir, "assets/stylesheets"
+set :js_dir, "assets/javascripts"
+set :images_dir, "assets/images"
 
 page "/*.json", layout: false
 page "/*.txt", layout: false
