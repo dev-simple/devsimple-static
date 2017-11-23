@@ -1,4 +1,5 @@
 <% pagination_default_path = pagination_default_path || '' %>
+<% pagination_without_num = pagination_without_num || false %>
 
 <ul class="mini-post-list">
     <% page_articles.each_with_index do |article, i| %>
@@ -10,4 +11,4 @@
     <% end %>
 </ul>
 
-<%= partial "partials/pagination", locals: { pagination_default_path: pagination_default_path } %>
+<%= partial "partials/pagination", locals: { pagination_default_path: pagination_default_path, pagination_without_num: pagination_without_num } %>
