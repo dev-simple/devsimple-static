@@ -9,7 +9,7 @@ activate :blog do |blog|
 
   blog.permalink = "{year}/{month}/{day}/{title}.html"
   blog.sources = "{year}/{month}/{day}-{title}.html"
-  blog.taglink = "tags/{tag}.html"
+  blog.taglink = "/tags/{tag}.html"
   blog.layout = "post_layout"
   blog.summary_separator = /\(READMORE\)/
   blog.summary_length = 250
@@ -24,7 +24,7 @@ activate :blog do |blog|
   # Enable pagination
   blog.paginate = true
   blog.per_page = 10
-  blog.page_link = "posts/page/{num}"
+  blog.page_link = "page/{num}"
 end
 
 set :markdown_engine, :redcarpet

@@ -1,3 +1,5 @@
+<% default_path = pagination_default_path || '' %>
+
 <% if paginate && num_pages > 1 %>
   <ul class="pagination">
       <% if prev_page %>
@@ -7,11 +9,11 @@
       <% if page_number == 1 %>
           <li class="pagination--item"><%= page_number %></li>
       <% else %>
-          <li class="pagination--item"><%= link_to 1, "/" %></li>
+          <li class="pagination--item"><%= link_to 1, prev_page %></li>
       <% end %>
 
       <% (2...page_number).each do |num| %>
-          <li class="pagination--item"><%= link_to num, "/posts/page/#{num}" %></li>
+          <li class="pagination--item"><%= link_to num, "#{default_path}/page/#{num}" %></li>
       <% end %>
 
       <% if page_number != 1 %>
@@ -19,7 +21,7 @@
       <% end %>
 
       <% ((page_number + 1)..num_pages).each do |num| %>
-          <li class="pagination--item"><%= link_to num, "/posts/page/#{num}" %></li>
+          <li class="pagination--item"><%= link_to num, "#{default_path}/page/#{num}" %></li>
       <% end %>
 
       <% if next_page %>
