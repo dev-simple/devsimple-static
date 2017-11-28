@@ -13,4 +13,14 @@ module ApplicationHelpers
     return File.read(file_path) if File.exists?(file_path)
     "(SVG not found)"
   end
+
+  def video(link)
+    content_tag(:iframe, frame_default_attributes.merge(src: link)) if link
+  end
+
+  private
+
+  def frame_default_attributes
+    { width: '100%', height: '100%', frameborder: '0', allowfullscreen: true }
+  end
 end
