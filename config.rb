@@ -5,26 +5,26 @@ activate :syntax, line_numbers: false
 activate :sprockets
 
 activate :blog do |blog|
-  blog.prefix = "posts"
+  blog.prefix = 'posts'
 
-  blog.permalink = "{year}/{month}/{day}/{title}.html"
-  blog.sources = "{year}/{month}/{day}-{title}.html"
-  blog.taglink = "/tags/{tag}.html"
-  blog.layout = "post_layout"
+  blog.permalink = '{year}/{month}/{day}/{title}.html'
+  blog.sources = '{year}/{month}/{day}-{title}.html'
+  blog.taglink = '/tags/{tag}.html'
+  blog.layout = 'post_layout'
   blog.summary_separator = /\(READMORE\)/
   blog.summary_length = 250
-  blog.year_link = "{year}.html"
-  blog.month_link = "{year}/{month}.html"
-  blog.day_link = "{year}/{month}/{day}.html"
-  blog.default_extension = ".md"
+  blog.year_link = '{year}.html'
+  blog.month_link = '{year}/{month}.html'
+  blog.day_link = '{year}/{month}/{day}.html'
+  blog.default_extension = '.md'
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+  blog.tag_template = 'tag.html'
+  blog.calendar_template = 'calendar.html'
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 10
-  blog.page_link = "page/{num}"
+  blog.page_link = 'page/{num}'
 end
 
 set :markdown_engine, :redcarpet
@@ -37,13 +37,14 @@ set :markdown,
   strikethrough: true,
   tables: true,
   with_toc_data: true
-set :css_dir, "assets/stylesheets"
-set :js_dir, "assets/javascripts"
-set :images_dir, "assets/images"
+set :fonts_dir, 'fonts'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
-page "/*.json", layout: false
-page "/*.txt", layout: false
-page "/*.xml", layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+page '/*.xml', layout: false
 
 configure :development do
   activate :livereload
