@@ -1,6 +1,6 @@
 ---
 
-title: Блог на Ruby on Rails - Урок 1 Базовый функционал
+title: 'Блог на Ruby on Rails - Урок 1: Базовый функционал'
 date: 2016-09-12 00:00 UTC
 tags: ruby, ruby on rails
 author: artyom

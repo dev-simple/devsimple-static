@@ -1,6 +1,6 @@
 ---
 
-title: Блог на Ruby on Rails - Урок 2 Bootstrap 4
+title: 'Блог на Ruby on Rails - Урок 2: Bootstrap 4'
 date: 2016-09-13 00:00 UTC
 tags: ruby, ruby on rails
 author: artyom
