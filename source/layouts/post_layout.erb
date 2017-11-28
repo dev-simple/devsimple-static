@@ -5,6 +5,7 @@
             <%= partial "partials/meta", locals: { article: current_article } %>
         </section>
         <section class="post--body">
+            <%= video(current_article.data.video) %>
             <%= yield %>
         </section>
     </article>

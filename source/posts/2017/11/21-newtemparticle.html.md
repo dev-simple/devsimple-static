@@ -3,7 +3,7 @@
 title: newTempArticle
 date: 2017-11-21 19:13 UTC
 author: artyom
-tags: [ruby, js]
+tags: ruby, js
 
 ---
 
