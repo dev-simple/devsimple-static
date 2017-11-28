@@ -37,6 +37,7 @@ set :markdown,
   strikethrough: true,
   tables: true,
   with_toc_data: true
+set :fonts_dir, "fonts"
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
 set :images_dir, "assets/images"

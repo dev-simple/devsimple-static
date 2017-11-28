@@ -26,6 +26,7 @@ header {
 nav {
   @include grid-column(1, $article-layout-grid);
   ul { text-align: center; }
+  i { font-size: 1.5rem !important; }
 
   @include grid-media($article-layout-grid--tablet-up) {
     @include grid-column(4);
