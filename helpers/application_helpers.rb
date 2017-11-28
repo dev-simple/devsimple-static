@@ -15,12 +15,8 @@ module ApplicationHelpers
   end
 
   def video(link)
-    content_tag(:iframe, frame_default_attributes.merge(src: link)) if link
-  end
-
-  private
-
-  def frame_default_attributes
-    { width: '100%', height: '100%', frameborder: '0', allowfullscreen: true }
+    if link
+      "<iframe width='100%' height='500' src='#{link}' frameborder='0' allowfullscreen></iframe>"
+    end
   end
 end
