@@ -15,8 +15,7 @@ module ApplicationHelpers
   end
 
   def video(link)
-    if link
-      "<iframe width='100%' height='500' src='#{link}' frameborder='0' allowfullscreen></iframe>"
-    end
+    return unless link
+    "<iframe width='100%' height='500' src='#{link}' frameborder='0' allowfullscreen></iframe>"
   end
 end
