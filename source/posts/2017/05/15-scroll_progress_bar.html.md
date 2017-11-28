@@ -2,7 +2,7 @@
 
 title: Индикатор прокрутки страницы
 date: 2017-05-15 00:00 UTC
-tags: JavaScript
+tags: javascript, ui
 author: artyom
 
 ---
