@@ -1,6 +1,6 @@
 ---
 
-title: Блог на Ruby on Rails - Базовый функционал
+title: Блог на Ruby on Rails - Урок 1 Базовый функционал
 date: 2016-09-12 00:00 UTC
 tags: ruby, ruby on rails
 author: artyom
@@ -10,7 +10,6 @@ video: https://www.youtube.com/embed/KzYkETRjYKY
 
 Первый урок по созданию Блога на Ruby on Rails. В этом уроке я расскажу как реализовать базовый функционал блога: создание, редактирование, удаление и отображение статей.
 (READMORE)
-
 
 ### Ссылки
 
