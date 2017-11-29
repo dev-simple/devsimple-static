@@ -1,10 +1,12 @@
 a {
   color: $primary-color;
   text-decoration: none;
+
   &:hover {
     color: $nav-link-color;
     text-decoration: underline;
   }
+
   &:focus {
     color: $primary-color;
   }
