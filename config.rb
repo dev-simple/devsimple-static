@@ -1,3 +1,5 @@
+require 'helpers/markdown_helpers'
+
 activate :aria_current
 activate :autoprefixer
 activate :directory_indexes
@@ -36,7 +38,9 @@ set :markdown,
   smartypants: true,
   strikethrough: true,
   tables: true,
-  with_toc_data: true
+  with_toc_data: true,
+  renderer: MarkdownHelpers::DSRenderer
+
 set :fonts_dir, 'fonts'
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
