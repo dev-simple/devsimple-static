@@ -21,7 +21,8 @@ $light-gray: #ddd;
 $red: #ee3e44;
 
 $primary-color: $red;
-$link-color: $dark-gray;
+$link-color: $primary-color;
+$nav-link-color: $dark-gray;
 
 // Font Colors
 $base-font-color: $dark-gray;

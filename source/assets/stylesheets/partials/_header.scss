@@ -42,6 +42,14 @@ nav {
     display: inline-block;
     padding: 1rem;
   }
+
+  a {
+    color: $nav-link-color;
+    text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
 
 [aria-current]:not([aria-current="false"]) {
@@ -49,11 +57,4 @@ nav {
   font-weight: bold;
 }
 
-a {
-  color: $link-color;
-  text-decoration: none;
-  &:hover {
-    color: $primary-color;
-  }
-}
 
