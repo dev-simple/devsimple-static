@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helpers/markdown_helpers'
 
 activate :aria_current
