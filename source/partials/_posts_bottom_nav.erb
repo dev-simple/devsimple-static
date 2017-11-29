@@ -1,0 +1,16 @@
+<% prev_article = current_article.article_previous %>
+<% next_article = current_article.article_next %>
+
+<ul class="pagination">
+    <% if prev_article %>
+        <li class="pagination--item">
+            <a href="<%= prev_article.url %>" rel="prev" title="Предыдущая статья: <%= prev_article.title %>">← Туда</a>
+        </li>
+    <% end %>
+
+    <% if next_article %>
+        <li class="pagination--item">
+            <a href="<%= next_article.url %>" rel="next" title="Cледующая статья: <%= next_article.title %>">Сюда →</a>
+        </li>
+    <% end %>
+</ul>
