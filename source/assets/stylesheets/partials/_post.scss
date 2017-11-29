@@ -33,13 +33,6 @@
 .meta-tag-item {
   display: inline-block;
 
-  a {
-    color: $primary-color;
-    &:hover {
-      color: $link-color;
-    }
-  }
-
   &:not(:last-of-type)::after {
     content: ",";
     display: inline-block;
