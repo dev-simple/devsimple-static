@@ -16,9 +16,9 @@ author: artyom
 
 Приступим к подключению скрипта. Первое, что необходимо сделать, подготовить необходимые файлы.
 
-** Скачать скрипт с официальной страницы (https://mburakerman.github.io/prognroll/) или из репозитория (https://github.com/mburakerman/prognroll)
-  ** Скачать библиотеку jQuery (http://jquery.com/)
-  ** Создать JS-файл для размещения кода инициализации и настройки скрипта. Назовем его scroll.js.
+  * Скачать скрипт с официальной страницы (https://mburakerman.github.io/prognroll/) или из репозитория (https://github.com/mburakerman/prognroll)
+  * Скачать библиотеку jQuery (http://jquery.com/)
+  * Создать JS-файл для размещения кода инициализации и настройки скрипта. Назовем его scroll.js.
 
 Подключаем файлы к странице
 
@@ -37,6 +37,7 @@ $(function() {
 ```
 
 Теперь при прокрутке страницы отображается индикатор.
+![Progn Roll Screen 01](posts/2017/05/progn_roll_screen_01.png "Progress bar with PrognRoll")
 
 Мы также можем изменить несколько параметров, которые необходимо передать в функцию prognroll
 
@@ -68,8 +69,10 @@ $(function() {
 ```
 
 Вот так будет выглядеть индикатор с настройками по умолчанию
+![You are here screen 01](posts/2017/05/you_are_here_screen_01.png "Default progress bar with YouAreHere")
 
 Немного изменим отображение индикатора добавив в файл scroll.js следующий код
+![You are here screen 02](posts/2017/05/you_are_here_screen_02.png "Custom progress bar with YouAreHere")
 
 ```javascript
 youAreHere({
