@@ -15,6 +15,7 @@ gem 'middleman-syntax'
 gem 'middleman-sprockets'
 gem 'middleman-aria_current'
 gem 'middleman-autoprefixer'
+gem 'middleman-favicon-maker'
 gem 'font-awesome-middleman'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
