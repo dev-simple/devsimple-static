@@ -8,21 +8,19 @@
 .mini-post--title {
   font-size: 1.75rem;
   line-height: 2.09rem;
-
   @include dark-link;
-
 }
 
 .mini-post--link {
   color: $primary-color;
-  &:hover {
-    color: $link-color;
-  }
+
+  &:hover { color: $link-color; }
 }
 
 .mini-post .meta {
   padding-bottom: 0;
 }
+
 .mini-post .meta-tag-list {
   text-align: left;
 
