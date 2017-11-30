@@ -37,18 +37,11 @@ nav {
 nav {
   height: 60px;
   margin-top: 0.4em;
+  @include dark-link;
 
   ul li {
     display: inline-block;
     padding: 1rem;
-  }
-
-  a {
-    color: $nav-link-color;
-    text-decoration: none;
-    &:hover {
-      color: $primary-color;
-    }
   }
 }
 
