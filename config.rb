@@ -62,6 +62,10 @@ page '/*.xml', layout: false
 
 configure :development do
   activate :livereload
+
+  activate :disqus do |d|
+    d.shortname = 'dev-devsimple-ru'
+  end
 end
 
 configure :build do
@@ -76,5 +80,9 @@ configure :build do
         { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' },
       ]
     }
+  end
+
+  activate :disqus do |d|
+    d.shortname = 'devsimple-ru'
   end
 end
