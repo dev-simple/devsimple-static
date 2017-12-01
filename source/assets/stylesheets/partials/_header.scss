@@ -28,6 +28,25 @@ nav {
   ul { text-align: center; }
   i.fa { font-size: 1.5rem; }
 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      display: none;
+      min-width: 200px;
+      position: absolute;
+      text-align: left;
+      z-index: 1;
+  }
+
+  .dropdown:hover {
+    .dropdown-content { display: block; }
+  }
+
   @include grid-media($article-layout-grid--tablet-up) {
     @include grid-column(4);
     ul { text-align: right; }

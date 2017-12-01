@@ -29,6 +29,14 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = 'page/{num}'
+
+  # Categories
+  blog.custom_collections = {
+    course: {
+      link: '/courses/{course}.html',
+      template: '/course.html'
+    }
+  }
 end
 
 set :markdown_engine, :redcarpet

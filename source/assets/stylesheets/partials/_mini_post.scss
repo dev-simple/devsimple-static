@@ -25,8 +25,6 @@
   text-align: left;
 
   @include grid-media($article-layout-grid--tablet-up) {
-    display: inline-block;
-    margin-left: 2rem;
-    text-align: right;
+    display: block;
   }
 }

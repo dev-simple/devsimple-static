@@ -5,6 +5,7 @@ date: 2016-10-13 00:00 UTC
 tags: ruby, ruby on rails, bootstrap
 author: artyom
 video: https://www.youtube.com/embed/yH5QY4xk8m8
+course: create_blog
 
 ---
 

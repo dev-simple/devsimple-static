@@ -5,6 +5,21 @@
     <nav>
         <ul>
             <li>
+                <%= link_to 'Все статьи', '/' %>
+            </li>
+
+            <% if list_of_courses.any? %>
+                <li class="dropdown">
+                    <span>Курсы</span>
+                    <ul class="dropdown-content">
+                        <% list_of_courses.each do |course| %>
+                            <li><%= link_to_course(course) %></li>
+                        <% end %>
+                    </ul>
+                </li>
+            <% end %>
+
+            <li>
                 <% link_to data.global.social_links.github.link do %>
                     <i class="fa fa-<%= data.global.social_links.github.icon %>"></i>
                 <% end %>

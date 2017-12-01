@@ -1,11 +1,12 @@
 <div class="meta">
-  <% author = find_author(article.data.author) %>
-  <span class="meta-author"><%= author.name %></span>
-  ∙
+  <% if article.data.course %>
+      Курс: <span class="meta-course">«<%= link_to_course(article.data.course) %>»</span>
+      ∙
+  <% end %>
   <span class="meta-date"><%= article.date.strftime("%d.%m.%Y") %></span>
   <ul class="meta-tag-list">
       <% article.tags.each do |tag| %>
-          <li class="meta-tag-item"><%= link_to tag, tag_path(tag) %></li>
+          <li class="meta-tag-item"><i class="fa fa-tag"></i> <%= link_to tag, tag_path(tag) %></li>
       <% end %>
   </ul>
 </div>

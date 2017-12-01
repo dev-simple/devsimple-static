@@ -5,6 +5,7 @@ date: 2016-10-24 00:00 UTC
 tags: ruby, ruby on rails
 author: artyom
 video: https://www.youtube.com/embed/Kj8rbMK9Pr4
+course: create_blog
 
 ---
 
