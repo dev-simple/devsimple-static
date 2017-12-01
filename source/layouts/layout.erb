@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="favicon.png">
     <link rel="icon" type="image/ico" href="favicon.ico">
 
-    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title>DS<%= ' ∷ ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
