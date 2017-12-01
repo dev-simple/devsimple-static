@@ -1,0 +1,9 @@
+@mixin dark-link {
+  a {
+    color: $nav-link-color;
+    text-decoration: none;
+
+    &:hover { color: $primary-color; }
+  }
+}
+

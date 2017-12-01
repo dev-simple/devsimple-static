@@ -5,6 +5,20 @@ module ApplicationHelpers
     result.first
   end
 
+  def find_course(course)
+    result = data.courses.select { |c| c.keys.first == course }
+    raise ArgumentError unless result.any?
+    result.first
+  end
+
+  def link_to_course(course)
+    link_to find_course(course).name, course_path(course)
+  end
+
+  def list_of_courses
+    sitemap.resources.map { |res| res.data.course }.compact.uniq.sort
+  end
+
   def svg(name)
     root = Middleman::Application.root
     images_path = config[:images_dir]

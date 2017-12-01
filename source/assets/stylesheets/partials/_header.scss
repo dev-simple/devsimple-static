@@ -28,6 +28,23 @@ nav {
   ul { text-align: center; }
   i.fa { font-size: 1.5rem; }
 
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown:hover .dropdown-content { display: block; }
+
+  .dropdown-content {
+    background-color: $dropdown-bg;
+    box-shadow: 0 8px 16px 0 $dropdown-shadow;
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+  }
+
   @include grid-media($article-layout-grid--tablet-up) {
     @include grid-column(4);
     ul { text-align: right; }
@@ -35,20 +52,13 @@ nav {
 }
 
 nav {
+  @include dark-link;
   height: 60px;
   margin-top: 0.4em;
 
   ul li {
     display: inline-block;
     padding: 1rem;
-  }
-
-  a {
-    color: $nav-link-color;
-    text-decoration: none;
-    &:hover {
-      color: $primary-color;
-    }
   }
 }
 
