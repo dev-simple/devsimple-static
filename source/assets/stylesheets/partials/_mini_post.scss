@@ -6,9 +6,9 @@
 }
 
 .mini-post--title {
+  @include dark-link;
   font-size: 1.75rem;
   line-height: 2.09rem;
-  @include dark-link;
 }
 
 .mini-post--link {
