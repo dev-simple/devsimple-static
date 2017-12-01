@@ -60,7 +60,6 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/*.xml', layout: false
 
-
 configure :development do
   activate :livereload
 
