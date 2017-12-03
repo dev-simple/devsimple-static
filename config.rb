@@ -11,7 +11,7 @@ activate :sprockets
 activate :blog do |blog|
   blog.prefix = 'posts'
 
-  blog.permalink = '{year}/{month}/{day}/{title}.html'
+  blog.permalink = '{title}.html'
   blog.sources = '{year}/{month}/{day}-{title}.html'
   blog.taglink = '/tags/{tag}.html'
   blog.layout = 'post_layout'
