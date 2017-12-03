@@ -1,12 +1,23 @@
 footer {
   @include grid-container;
-  height: 200px;
-  background: #29292c;
-  color: #b5b5c0;
+  background: $footer-bg;
+  color: $footer-color;
+  height: $footer-height;
 }
 
 .footer-content {
   @include grid-column(1, $article-layout-grid);
   text-align: center;
   padding: 2rem;
+
+  a {
+    color: $footer-color;
+    &:hover { color: $primary-color; }
+  }
+
+  i.fa { font-size: 1.5rem; }
+  li {
+    display: inline-block;
+    padding: 0.5rem;
+  }
 }

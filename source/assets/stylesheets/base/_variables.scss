@@ -12,6 +12,7 @@ $base-border-radius: 3px;
 $base-spacing: 1.5em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+$footer-height: 200px;
 
 // Colors
 $blue: #1565c0;
@@ -23,6 +24,9 @@ $red: #ee3e44;
 $primary-color: $red;
 $link-color: $primary-color;
 $nav-link-color: $dark-gray;
+
+$footer-color: #b5b5c0;
+$footer-bg: #29292c;
 
 $dropdown-bg: #f9f9f9;
 $dropdown-shadow: rgba(0, 0, 0, 0.2);

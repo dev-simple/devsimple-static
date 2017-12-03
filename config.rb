@@ -11,7 +11,7 @@ activate :sprockets
 activate :blog do |blog|
   blog.prefix = 'posts'
 
-  blog.permalink = '{year}/{month}/{day}/{title}.html'
+  blog.permalink = '{title}.html'
   blog.sources = '{year}/{month}/{day}-{title}.html'
   blog.taglink = '/tags/{tag}.html'
   blog.layout = 'post_layout'
@@ -69,6 +69,11 @@ configure :development do
 end
 
 configure :build do
+  activate :gzip
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+
   activate :favicon_maker do |f|
     f.template_dir = 'source/assets/images'
     f.icons = {
