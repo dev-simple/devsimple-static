@@ -1,6 +1,6 @@
 ---
 
-title: Fast Ruby & Fasterer
+title: 'Эпизод #1 - Fast Ruby & Fasterer'
 date: 2017-11-28
 tags: ruby, gems
 author: artyom
