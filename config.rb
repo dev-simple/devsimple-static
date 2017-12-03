@@ -69,6 +69,11 @@ configure :development do
 end
 
 configure :build do
+  activate :gzip
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+
   activate :favicon_maker do |f|
     f.template_dir = 'source/assets/images'
     f.icons = {
