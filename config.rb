@@ -63,8 +63,8 @@ page '/*.xml', layout: false
 configure :development do
   activate :livereload
 
-  activate :disqus do |d|
-    d.shortname = 'dev-devsimple-ru'
+  activate :disqus do |disqus|
+    disqus.shortname = 'dev-devsimple-ru'
   end
 end
 
@@ -87,7 +87,15 @@ configure :build do
     }
   end
 
-  activate :disqus do |d|
-    d.shortname = 'devsimple-ru'
+  activate :disqus do |disqus|
+    disqus.shortname = 'devsimple-ru'
+  end
+
+  activate :deploy do |deploy|
+    deploy.deploy_method = :git
+    deploy.remote   = 'git@github.com:dev-simple/dev-simple.github.io.git'
+    deploy.branch   = 'master'
+    deploy.strategy = :submodule
+    deploy.build_before = true
   end
 end

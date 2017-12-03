@@ -16,7 +16,8 @@ gem 'middleman-sprockets'
 gem 'middleman-aria_current'
 gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker'
-gem "middleman-disqus"
+gem 'middleman-disqus'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'font-awesome-middleman'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
