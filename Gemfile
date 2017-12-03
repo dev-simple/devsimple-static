@@ -18,6 +18,7 @@ gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker'
 gem 'middleman-disqus'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+gem 'middleman-dotenv', '~> 2.0'
 gem 'font-awesome-middleman'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
