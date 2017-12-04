@@ -32,7 +32,7 @@ num = 1_000_000
 Для того, чтобы придерживаться этому своду правил существует статический анализатор кода Rubocop.
 
 ## Rubocop
-Для того, чтобы проанализировать ваш код, Rubocop использует так называемые cop'ы.
+Для того, чтобы проанализировать ваш код, [Rubocop](https://github.com/bbatsov/rubocop) использует так называемые cop'ы.
 Существует несколько категорий cop'ов:
 
   1. **Style** - анализирует стиль кода (форматирование)
@@ -71,7 +71,7 @@ num = 1_000_000
 
   10. **Gemspec** - следит за стилями и хорошими практиками в `gemspec` файлах
 
-Подробнее можно почитать в официальной документации http://rubocop.readthedocs.io/en/latest/
+Подробнее можно почитать в [официальной документации](http://rubocop.readthedocs.io/en/latest/).
 
 ## Практика
 
@@ -233,3 +233,12 @@ Would you like to continue press 'any key' or 'n/N' to halt?
 ```
 
 Мы видим все нарушения, который нашел rubocop. Если мы хотим их исправить, то просто вводим `n` и нажимаем `Enter`.
+
+### Ссылки:
+
+  * **Ruby Style Guide:** https://github.com/arbox/ruby-style-guide/blob/master/README-ruRU.md
+  * **Rails Style Guide:** https://github.com/arbox/rails-style-guide/blob/master/README-ruRU.md#activerecord
+  * **Rubocop:** https://github.com/bbatsov/rubocop
+  * **Rubocop оф. документация:** http://rubocop.readthedocs.io/en/latest/
+  * **Git Hook:** https://gist.github.com/arty88/95ab0189d42d05da92f74fdee6d38abf
+
