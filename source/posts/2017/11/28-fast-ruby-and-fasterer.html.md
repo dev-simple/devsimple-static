@@ -4,6 +4,7 @@ title: 'Эпизод #1 - Fast Ruby & Fasterer'
 date: 2017-11-28
 tags: ruby, gems, clean code
 author: artyom
+category: episodes
 video: https://www.youtube.com/embed/bGRRnOGJwZQ
 
 ---

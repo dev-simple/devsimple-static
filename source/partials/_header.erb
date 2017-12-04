@@ -8,6 +8,12 @@
                 <%= link_to 'Все статьи', '/' %>
             </li>
 
+            <% if list_of_categories.any? %>
+                <% list_of_categories.each do |category| %>
+                    <li><%= link_to_category(category) %></li>
+                <% end %>
+            <% end %>
+
             <% if list_of_courses.any? %>
                 <li class="dropdown">
                     <span>Курсы</span>

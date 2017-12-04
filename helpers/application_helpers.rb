@@ -19,6 +19,20 @@ module ApplicationHelpers
     sitemap.resources.map { |res| res.data.course }.compact.uniq.sort
   end
 
+  def find_category(category)
+    result = data.categories.select { |c| c.keys.first == category }
+    raise ArgumentError unless result.any?
+    result.first
+  end
+
+  def link_to_category(category)
+    link_to find_category(category).name, category_path(category)
+  end
+
+  def list_of_categories
+    sitemap.resources.map { |res| res.data.category }.compact.uniq.sort
+  end
+
   def svg(name)
     root = Middleman::Application.root
     images_path = config[:images_dir]

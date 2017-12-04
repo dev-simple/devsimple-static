@@ -4,6 +4,7 @@ title: 'Эпизод #2 - Rubocop'
 date: 2017-12-03 20:33 UTC
 tags: ruby, gems, clean code
 author: artyom
+category: episodes
 
 ---
 В этом эпизоде поговорим о стиле программирования.

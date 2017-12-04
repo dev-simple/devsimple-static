@@ -1,6 +1,10 @@
 <div class="meta">
   <% if article.data.course %>
-      <i class="fa fa-graduation-cap"></i> <span class="meta-course">«<%= link_to_course(article.data.course) %>»</span>
+      <i class="fa fa-graduation-cap"></i> <span class="meta-course"><%= link_to_course(article.data.course) %></span>
+      ∙
+  <% end %>
+  <% if article.data.category %>
+      <i class="fa fa-graduation-cap"></i> <span class="meta-category"><%= link_to_category(article.data.category) %></span>
       ∙
   <% end %>
   <span class="meta-date"><%= article.date.strftime("%d.%m.%Y") %></span>

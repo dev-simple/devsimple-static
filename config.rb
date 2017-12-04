@@ -35,6 +35,10 @@ activate :blog do |blog|
     course: {
       link: '/courses/{course}.html',
       template: '/course.html'
+    },
+    category: {
+      link: '/categories/{category}.html',
+      template: '/category.html'
     }
   }
 end
