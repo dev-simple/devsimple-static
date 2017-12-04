@@ -5,6 +5,7 @@ date: 2017-12-03 20:33 UTC
 tags: ruby, gems, clean code
 author: artyom
 category: episodes
+video: https://www.youtube.com/embed/wtPkDjkMqz4
 
 ---
 В этом эпизоде поговорим о стиле программирования.
