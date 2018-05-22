@@ -94,7 +94,7 @@ configure :build do
     deploy.deploy_method = :git
     deploy.remote   = 'git@github.com:dev-simple/dev-simple.github.io.git'
     deploy.branch   = 'master'
-    deploy.strategy = :submodule
+    deploy.strategy = :force_push
     deploy.build_before = true
   end
 end
