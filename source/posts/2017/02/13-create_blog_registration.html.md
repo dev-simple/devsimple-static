@@ -17,5 +17,5 @@ course: create_blog
   * **Гем Devise:** https://github.com/plataformatec/devise
   * **Русификация Devise:** https://github.com/plataformatec/devise/wiki/I18n
   * **Гем letter_opener:** https://github.com/ryanb/letter_opener
-  * **Ссылка на репозиторий проекта:** https://github.com/arty88/blog/tree/l_12
+  * **Ссылка на репозиторий проекта:** https://github.com/artanikin/blog/tree/l_12
 

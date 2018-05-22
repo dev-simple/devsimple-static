@@ -13,5 +13,5 @@ course: create_blog
 (READMORE)
 
 ### Ссылки
-  * **Ссылка на репозиторий проекта:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий проекта:** https://github.com/artanikin/blog
 

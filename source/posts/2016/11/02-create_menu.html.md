@@ -19,4 +19,4 @@ course: create_blog
 ### Ссылки
 
   * **Ссылка на репозиторий ancestry:** https://github.com/stefankroes/ancestry
-  * **Ссылка на репозиторий проекта:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий проекта:** https://github.com/artanikin/blog

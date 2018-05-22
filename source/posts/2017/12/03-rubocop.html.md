@@ -195,7 +195,7 @@ Style/Documentation:
 
 Велика вероятность того, что вы можете забыть проверить ваш код перед коммитом в репозиторий. Чтобы исключить вероятность человеческого фактора воспользуемся pre-commit хуком для git.
 
-В каждом проекте, в котором был инициализирован git репозиторий есть папка `.git/hooks`. Создайте файл `pre-commit` и скопируйте в него содержимое из файла по ссылке https://gist.github.com/arty88/95ab0189d42d05da92f74fdee6d38abf
+В каждом проекте, в котором был инициализирован git репозиторий есть папка `.git/hooks`. Создайте файл `pre-commit` и скопируйте в него содержимое из файла по ссылке https://gist.github.com/artanikin/95ab0189d42d05da92f74fdee6d38abf
 
 Для работы данного хука, ему нужно добавить право доступа на исполнение
 
@@ -242,5 +242,5 @@ Would you like to continue press 'any key' or 'n/N' to halt?
   * **Rails Style Guide:** https://github.com/arbox/rails-style-guide/blob/master/README-ruRU.md#activerecord
   * **Rubocop:** https://github.com/bbatsov/rubocop
   * **Rubocop оф. документация:** http://rubocop.readthedocs.io/en/latest/
-  * **Git Hook:** https://gist.github.com/arty88/95ab0189d42d05da92f74fdee6d38abf
+  * **Git Hook:** https://gist.github.com/artanikin/95ab0189d42d05da92f74fdee6d38abf
 

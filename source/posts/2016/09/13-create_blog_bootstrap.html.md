@@ -16,4 +16,4 @@ course: create_blog
 
   * **Официальная страница Bootstrap 4:** http://v4-alpha.getbootstrap.com/
   * **Репозиторий Bootstrap 4:** https://github.com/twbs/bootstrap-rubygem
-  * **Ссылка на репозиторий:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий:** https://github.com/artanikin/blog

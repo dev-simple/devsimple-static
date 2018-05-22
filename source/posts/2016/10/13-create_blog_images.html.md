@@ -24,6 +24,6 @@ $ brew install imagemagick
 
 ### Ссылки
 
-  * **Ссылка на репозиторий:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий:** https://github.com/artanikin/blog
   * **Carrierwave:** https://github.com/carrierwaveuploader/carrierwave
   * **Minimagick:** https://github.com/minimagick/minimagick
