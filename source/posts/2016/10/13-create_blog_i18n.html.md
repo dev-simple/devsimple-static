@@ -14,5 +14,5 @@ course: create_blog
 
 ### Ссылки
 
-  * **Ссылка на репозиторий:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий:** https://github.com/artanikin/blog
 

@@ -16,5 +16,5 @@ course: create_blog
 
   * **Ссылка на репозиторий will_paginate:** https://github.com/mislav/will_paginate
   * **Ссылка на gist для интеграции навигации и Bootstrap 4:** https://goo.gl/HGPuZb
-  * **Ссылка на репозиторий проекта:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий проекта:** https://github.com/artanikin/blog
 

@@ -15,4 +15,4 @@ course: create_blog
 ### Ссылки
 
   * **Как установить Ruby и Ruby on Rails:** http://devsimple.ru/install-ruby-on-rails-on-ubuntu/
-  * **Ссылка на репозиторий:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий:** https://github.com/artanikin/blog

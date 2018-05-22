@@ -14,6 +14,6 @@ course: create_blog
 
 ### Ссылки
 
-  * **Ссылка на репозиторий проекта:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий проекта:** https://github.com/artanikin/blog
   * **Страница редактора:** https://trix-editor.org/
   * **Репозитроий Trix:** https://github.com/maclover7/trix

@@ -15,5 +15,5 @@ course: create_blog
 ### Ссылки
 
   * **Подробнее об интернационализации можно почитать тут:** http://guides.rubyonrails.org/i18n.html
-  * **Ссылка на репозиторий:** https://github.com/arty88/blog
+  * **Ссылка на репозиторий:** https://github.com/artanikin/blog
 
