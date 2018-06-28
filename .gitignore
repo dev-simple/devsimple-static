@@ -7,6 +7,9 @@
 # Ignore bundler config
 /.bundle
 
+# Ignore the build directory
+/build
+
 # Ignore cache
 /.sass-cache
 /.cache
@@ -15,5 +18,3 @@
 .DS_Store
 
 /.env
-# /build/*
-# !/build/.keep
