@@ -18,4 +18,5 @@
 .DS_Store
 
 /.env
-build/*
+/build/*
+!/build/.keep
