@@ -20,7 +20,7 @@ end
 
 desc "Build and deploy the website"
 task :deploy do
-  puts "-----> Deploying website via rsync to #{SSH_HOST}"
+  puts "-----> Deploying website via rsync to #{ENV['SSH_HOST']}"
   status = system("rsync -aP build/ #{ENV['SSH_USER']}@#{ENV['SSH_HOST']}:#{ENV['SSH_DIR']}")
   puts status ? "OK" : "FAILED"
 end
