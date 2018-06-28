@@ -58,6 +58,7 @@ set :images_dir, 'assets/images'
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/*.xml', layout: false
+page '/*.apache', layout: false
 
 configure :development do
   activate :livereload
@@ -89,4 +90,8 @@ configure :build do
   activate :disqus do |disqus|
     disqus.shortname = 'devsimple-ru'
   end
+end
+
+after_build do
+  File.rename 'build/.htaccess.apache', 'build/.htaccess'
 end
