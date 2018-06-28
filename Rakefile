@@ -12,6 +12,12 @@ task :build do
   puts status ? "OK" : "FAILED"
 end
 
+desc "Run simple python server at http://localhost:8000"
+task :stat do
+  system("open http://localhost:8000")
+  system("cd build && python -m SimpleHTTPServer 8000")
+end
+
 desc "Build and deploy the website"
 task :deploy do
   puts "-----> Deploying website via rsync to #{SSH_HOST}"
