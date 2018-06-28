@@ -2,17 +2,17 @@
     <ul class="footer-content">
         <li>©2017 DevSimple</li>
         <li>
-            <% link_to data.global.social_links.youtube.link do %>
+            <% link_to data.global.social_links.youtube.link, target: '_blank' do %>
                 <i class="fa fa-<%= data.global.social_links.youtube.icon %>"></i>
             <% end %>
         </li>
         <li>
-            <% link_to data.global.social_links.github.link do %>
+            <% link_to data.global.social_links.github.link, target: '_blank' do %>
                 <i class="fa fa-<%= data.global.social_links.github.icon %>"></i>
             <% end %>
         </li>
         <li>
-            <% link_to data.global.social_links.rss.link do %>
+            <% link_to data.global.social_links.rss.link, target: '_blank' do %>
                 <i class="fa fa-<%= data.global.social_links.rss.icon %>"></i>
             <% end %>
         </li>
