@@ -5,3 +5,6 @@ social_links:
   youtube:
     link: https://www.youtube.com/channel/UCzBDZvjXprwp4nG9qgbudKA
     icon: youtube-play
+  rss:
+    link: https://devsimple.ru/feed.xml
+    icon: rss-square
