@@ -62,10 +62,6 @@ page '/*.apache', layout: false
 
 configure :development do
   activate :livereload
-
-  activate :disqus do |disqus|
-    disqus.shortname = 'dev-devsimple-ru'
-  end
 end
 
 configure :build do
@@ -85,10 +81,6 @@ configure :build do
         { icon: 'favicon.ico', size: '64x64,32x32,24x24,16x16' },
       ]
     }
-  end
-
-  activate :disqus do |disqus|
-    disqus.shortname = 'devsimple-ru'
   end
 end
 
