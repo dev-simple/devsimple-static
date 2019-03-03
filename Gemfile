@@ -5,6 +5,8 @@ end
 
 source 'https://rubygems.org'
 
+gem 'rake'
+
 gem 'wdm', '~> 0.1.0', platforms: %i[mswin mingw]
 gem 'tzinfo-data', platforms: %i[mswin mingw jruby]
 
