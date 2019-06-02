@@ -5,7 +5,7 @@ date: 2019-05-11 14:24 UTC
 tags: tools, git, rubocop, fasterer, clean code
 author: artyom
 category: episodes
-video_disabled: https://www.youtube.com/embed/8MRLQyEYHWg
+video: https://www.youtube.com/embed/hJIpQTRFKn0
 
 ---
 
