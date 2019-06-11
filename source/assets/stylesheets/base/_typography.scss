@@ -43,3 +43,14 @@ hr {
   border-top: 0;
   margin: $base-spacing 0;
 }
+
+.anchor {
+  padding-right: 2px;
+  margin-left: -18px;
+  width: 16;
+  display: none;
+}
+
+.title:hover .anchor {
+  display: inline-block;
+}
