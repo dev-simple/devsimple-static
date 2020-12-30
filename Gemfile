@@ -25,7 +25,7 @@ gem 'font-awesome-middleman'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'builder', '~> 3.0'
-gem 'nokogiri', '~> 1.8.2'
+gem 'nokogiri', '~> 1.10.10'
 
 gem 'bitters'
 gem 'bourbon'
