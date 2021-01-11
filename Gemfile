@@ -23,7 +23,7 @@ gem 'dotenv'
 gem 'middleman-dotenv', '~> 2.0'
 gem 'font-awesome-middleman'
 
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.5'
 gem 'builder', '~> 3.0'
 gem 'nokogiri', '~> 1.8.2'
 
